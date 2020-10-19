@@ -1,0 +1,60 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "orange_juiceregular";
+  src: url("fonts/orange/orange_juice_2.0-webfont.woff2") format("woff2"), url("fonts/orange/orange_juice_2.0-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+}
+
+.logo {
+  font-family: "orange_juiceregular";
+  font-size: 50px;
+  color: #965EEC;
+}
+
+fa-shopping-cart:before {
+  content: "";
+  font-size: large;
+  padding-right: 20px;
+}
+
+i::before {
+  padding-right: 10px;
+  background: linear-gradient(to left, #965EEC, #C77412);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.panier {
+  float: right;
+  position: relative;
+  margin-top: -100px;
+}
+
+img {
+  width: 50%;
+}
+
+h2 {
+  position: relative;
+  width: 100%;
+}
+
+#list_container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.voir_produit {
+  display: block;
+}
+
+.nounours {
+  width: 50%;
+}
+
+/*# sourceMappingURL=style.css.map */
