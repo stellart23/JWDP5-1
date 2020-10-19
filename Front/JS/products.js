@@ -47,7 +47,9 @@ function createTeddieHtml (teddieObject){
     console.log(myImage);
     listparent.appendChild(myImage)  
 
-   
+    let detailOption = document.getElementsByTagName('option')
+    console.log(detailOption);
+
 
 /*let detailOption = document.getElementById("detailOption");
 let detailAction = document.getElementById("ajout_panier");
