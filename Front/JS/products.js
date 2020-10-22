@@ -1,7 +1,7 @@
 const listparent = document.getElementById('choixProduit');
-//async function detailTeddies() {
+
 let id = window.location.search.substring(4)
-//const detailTeddies = await createTeddieHtml();
+
 
 
 fetch('http://localhost:3000/api/teddies/'+ id)
@@ -50,17 +50,14 @@ function createTeddieHtml (teddieObject){
     let detailOption = document.getElementsByTagName('option')
     console.log(detailOption);
 
-
-/*let detailOption = document.getElementById("detailOption");
-let detailAction = document.getElementById("ajout_panier");
-
-
-  detailTeddies.colors.forEach((teddieObject) => {
-    let colors_select = document.createElement("value");
-    document
-      .getElementById("colors_select")
-      .appendChild(value).innerHTML = teddieObject;
-    });*/
+    let optionContainer = document.getElementById('colors_select')
+    teddieObject.colors.forEach(color => {
+        let option = document.createElement("option");
+    option.innerHTML= color
+    option.setAttribute('value', color)
+    optionContainer.appendChild(option)
+    });
+    
 
 }
 
